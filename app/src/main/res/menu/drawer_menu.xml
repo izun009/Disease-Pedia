@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_calculator"
+            android:icon="@drawable/ic_calculator"
+            android:title="Calculator BMI" />
+
+        <item
+            android:id="@+id/nav_favorite"
+            android:icon="@drawable/ic_favorite"
+            android:title="Favorites" />
+
+<!--        <item-->
+<!--            android:id="@+id/nav_setting"-->
+<!--            android:icon="@drawable/ic_setting"-->
+<!--            android:title="Settings" />-->
+
+    </group>
+
+    <item android:title="Informations">
+        <menu>
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="Share" />
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_about"
+                android:title="About" />
+
+        </menu>
+    </item>
+
+</menu>

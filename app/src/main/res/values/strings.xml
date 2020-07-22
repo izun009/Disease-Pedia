@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Disease Pedia</string>
+
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="copy_right" translatable="false">Copyrights © %1$d</string>
+
+    <string name="app_description">Dispedia merupakan aplikasi yang membantu masyarakat umum
+        untuk mengetahui berbagai macam-macam penyakit beserta gejala, penyebab, diagnosis dan pengobatannya.</string>
+
+</resources>

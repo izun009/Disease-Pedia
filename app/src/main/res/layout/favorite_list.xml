@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    xmlns:ndroid="http://schemas.android.com/tools"-->
+<!--    android:orientation="vertical"-->
+<!--    android:layout_height="wrap_content">-->
+
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_margin="5dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+
+<!--        <RelativeLayout-->
+<!--            android:padding="8dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/fimg_pr"-->
+<!--                android:src="@mipmap/ic_launcher"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:padding="5dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/ftv_name"-->
+<!--                android:text="Title"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_toRightOf="@+id/fimg_pr"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textColor="#000000"-->
+<!--                ndroid:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>-->
+
+
+
+<!--        </RelativeLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--</LinearLayout>-->
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_800">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/fimg_pr"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ftv_name"
+            android:text="Title"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_toRightOf="@+id/fimg_pr"
+            android:layout_toEndOf="@+id/fimg_pr"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp" />
+
+        <ImageView
+            android:id="@+id/del_fav_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/ftv_name"
+            android:src="@drawable/ic_favorite"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

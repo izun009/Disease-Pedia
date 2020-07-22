@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI calculator"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="1 Meter = 100 Centimeters"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="150 Centimeter = 1.5 Meter (Using dot)"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Height"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="in Meter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Weight"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="in Kilogram" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_calculate"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/underweight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Under Weight"
+            android:textColor="@color/skyblue"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/value_underweight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="&lt; 20"
+            android:textColor="@color/skyblue"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/underweight"
+            android:layout_marginLeft="100dp" />
+
+        <TextView
+            android:id="@+id/normal_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/underweight"
+            android:text="Normal"
+            android:textColor="@color/lime"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/value_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/value_underweight"
+            android:text="20 - 25"
+            android:textColor="@color/lime"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/normal_weight"
+            android:layout_marginLeft="140dp" />
+
+
+        <TextView
+            android:id="@+id/overweight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/normal_weight"
+            android:text="Over Weight"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/value_overweight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/value_normal"
+            android:text="25 - 30"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/underweight"
+            android:layout_marginLeft="92dp" />
+
+
+        <TextView
+            android:id="@+id/obese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/overweight"
+            android:text="Over Weight"
+            android:textColor="@color/orange"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/value_obese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/value_overweight"
+            android:text="30 - 40"
+            android:textColor="@color/orange"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/underweight"
+            android:layout_marginLeft="92dp" />
+
+
+        <TextView
+            android:id="@+id/more_obese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/obese"
+            android:text="Morbidly Obese"
+            android:textColor="@color/red"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/value_more_obese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/value_obese"
+            android:text="&gt; 40"
+            android:textColor="@color/red"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/underweight"
+            android:layout_marginLeft="100dp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
