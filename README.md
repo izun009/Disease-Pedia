@@ -1,1 +1,1 @@
-# Disease-Pedia
+# Diseasepedia
